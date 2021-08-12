@@ -50,7 +50,7 @@ Variables
   --spacing: 0.25rem;
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   --max-width: 1170px;
   --fixed-width: 620px;
 }
@@ -160,7 +160,7 @@ p {
 .section {
   padding: 5rem 0;
 }
-
+ 
 .section-center {
   width: 90vw;
   margin: 5rem auto;
@@ -178,8 +178,14 @@ Countdown Timer
 ===============
 */
 .gift-img {
-  margin-bottom: 2rem;
+  margin: auto auto 2rem;
+  box-shadow: var(--dark-shadow);
+  width: 80vw;
 }
+.gift-info {
+  text-align: center;
+}
+
 .gift-info h3 {
   text-transform: uppercase;
   color: var(--clr-primary-3);
@@ -201,6 +207,7 @@ Countdown Timer
   }
   .gift-img {
     margin-bottom: 0;
+    width: auto
   }
 }
 .gift-info p {
@@ -208,6 +215,7 @@ Countdown Timer
 }
 .deadline {
   display: flex;
+  justify-content: center;
 }
 .deadline-format {
   background: var(--clr-grey-1);
@@ -230,3 +238,4 @@ Countdown Timer
   margin-bottom: 0.25rem;
   letter-spacing: var(--spacing);
 }
+
