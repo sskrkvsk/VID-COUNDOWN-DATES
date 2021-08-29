@@ -46,7 +46,7 @@ let month = futureDate.getMonth();
 month = months[month];
 const weekday = weekdays[futureDate.getDay()];
 
-giveaway.textContent = `Giveaway ends on ${weekday}, ${date} ${month} ${year}, ${hours}:${minutes}am`;
+giveaway.textContent = `This beautiful day starts on ${weekday}, ${date} ${month} ${year}, ${hours}:${minutes}am`;
 
 // future time in ms
 
